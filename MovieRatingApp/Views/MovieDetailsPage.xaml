@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovieRatingApp.Views.MovieDetailsPage"
+             xmlns:model="clr-namespace:MovieRatingApp.Models"
+             xmlns:viewmodel="clr-namespace:MovieRatingApp.ViewModels"
+             x:DataType="viewmodel:MovieDetailsViewModel"
+             Title="{Binding Movie.Name}">
+    <VerticalStackLayout Padding="20"
+                         Spacing="10">
+        <Image HorizontalOptions="Center" 
+               Aspect="AspectFill" 
+               Source="{Binding Movie.Image}"
+               WidthRequest="200"
+               HeightRequest="200"/>
+        <Label HorizontalOptions="CenterAndExpand"
+               Style="{StaticResource LargeLabel}"
+               Text="Resume"/>
+        <Label HorizontalOptions="CenterAndExpand"
+               Style="{StaticResource MediumLabel}"
+               Text="{Binding Movie.RealeaseDate, StringFormat='{0:d}'}"/>
+        <Label Text="{Binding Movie.Resume}"
+               HorizontalOptions="CenterAndExpand"
+               LineBreakMode="WordWrap"
+               Style="{StaticResource SmallLabel}"
+               Margin="0,20,0,0"/>
+    </VerticalStackLayout>
+</ContentPage>
