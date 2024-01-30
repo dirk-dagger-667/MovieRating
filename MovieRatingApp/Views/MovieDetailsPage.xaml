@@ -14,15 +14,15 @@
                WidthRequest="200"
                HeightRequest="200"/>
         <Label HorizontalOptions="CenterAndExpand"
-               Style="{StaticResource LargeLabel}"
-               Text="Resume"/>
-        <Label HorizontalOptions="CenterAndExpand"
                Style="{StaticResource MediumLabel}"
-               Text="{Binding Movie.RealeaseDate, StringFormat='{0:d}'}"/>
+               Text="{Binding Movie.RealeaseDate, StringFormat='Release date: {0:d}'}"/>
+        <Label HorizontalOptions="CenterAndExpand"
+               Style="{StaticResource LargeLabel}"
+               Text="Resume"
+               Margin="0,20,0,0"/>
         <Label Text="{Binding Movie.Resume}"
                HorizontalOptions="CenterAndExpand"
                LineBreakMode="WordWrap"
-               Style="{StaticResource SmallLabel}"
-               Margin="0,20,0,0"/>
+               Style="{StaticResource SmallLabel}"/>
     </VerticalStackLayout>
 </ContentPage>
