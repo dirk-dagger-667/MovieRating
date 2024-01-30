@@ -57,6 +57,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\american_psycho.jpg" />
+	  <None Remove="Resources\Images\Dune.jpg" />
+	  <None Remove="Resources\Images\killers_of_the_flower_moon.jpg" />
+	  <None Remove="Resources\Images\Kiss_kiss_bang_bang.jpg" />
+	  <None Remove="Resources\Images\public_enemies.jpg" />
+	  <None Remove="Resources\Images\revolver.jpg" />
+	  <None Remove="Resources\Images\se7en.jpg" />
+	  <None Remove="Resources\Images\the_hateful_eight.jpg" />
+	  <None Remove="Resources\Images\the_killer.jpg" />
+	  <None Remove="Resources\Images\the_lincoln_lawyer.jpg" />
+	  <None Remove="Resources\Images\the_whale.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
